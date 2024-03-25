@@ -8,9 +8,13 @@
 
 :root {
   --background-color: #c8d1c7;
-  --button-color: #979aa4;
+  --button-color: #c4c8d6;
   --button-color-hover: #d7dcea;
   --font-family: "Roboto", sans-serif;
+}
+
+.input-text {
+  padding: 5px;
 }
 
 a {
