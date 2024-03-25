@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  font-size: 1.4rem;
+}
+
+.container > p {
+  margin-bottom: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form__titulo {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-style: uppercase;
+}
+
+.secao-do-formulario {
+  margin-bottom: 1rem;
+}
+
+.data-personalizada,
+.nome-do-produto {
+  display: flex;
+  flex-direction: column;
+}
+
+.data-personalizada {
+  display: none;
+}
+
+.botao-enviar {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-submit {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--button-color);
+  border: none;
+  font-size: 1.2rem;
+  width: fit-content;
+}
+
+.btn-submit:hover {
+  background-color: var(--button-color-hover);
+  transition: ease 500ms;
+  cursor: pointer;
+}
+
+.btn-submit:active {
+  border: 1px solid green;
+  transition: none;
+}
