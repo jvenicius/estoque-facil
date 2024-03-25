@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +8,9 @@
 
 :root {
   --background-color: #c8d1c7;
-  --button-color: #83868e;
+  --button-color: #979aa4;
   --button-color-hover: #d7dcea;
+  --font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -17,6 +20,7 @@ a {
 
 body {
   background-color: var(--background-color);
+  font-family: var(--font-family);
 }
 
 .btn {
@@ -45,7 +49,7 @@ body {
 .logo h1 {
   margin: 0;
   padding: 0;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 
 .logo p {
@@ -65,4 +69,14 @@ body {
 .menu {
   display: grid;
   justify-content: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 1%;
+  left: 1%;
+}
+
+.user-name {
+  font-size: 1.1rem;
 }
