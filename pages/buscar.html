@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SystemWeb - Estoque Fácil" />
+    <meta name="keywords" content="Estoque Fácil, Estoque, Mercado" />
+    <meta
+      name="author"
+      content="José Antônio de Souza Neto, Rafael Ribeiro Talarico, José Venícius"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/buscar.css">
+    <title>Buscar produto</title>
+</head>
+<body>
+    <header class="logo">
+      <h1><span class="green">Estoque</span><span class="blue">Fácil</span></h1>
+      <p>Sistema de gestão e controle</p>
+    </header>
+    <main class="container">
+        <span class="form__titulo">Filtrar por período</span>
+        <form action="">
+            <div id="periodos" class="secao-do-formulario">
+                <input type="radio" id="hoje" name="intervaloDeTempo" value="hoje">
+                <label for="hoje">Hoje</label>
+                <input type="radio" id="ultimosSeteDias" name="intervaloDeTempo" value="ultimosSeteDias">
+                <label for="ultimosSeteDias">Últimos 7 Dias</label>
+                <input type="radio" id="ultimosTrintaDias" name="intervaloDeTempo" value="ultimosTrintaDias">
+                <label for="ultimosTrintaDias">Últimos 30 Dias</label>
+                <input type="radio" id="personalizado" name="intervaloDeTempo" value="personalizado">
+                <label for="personalizado">Personalizado</label>
+            </div>
+
+            <div id="dataPersonalizada" class="secao-do-formulario data-personalizada">
+                <label for="dataInicial">Data Inicial</label>
+                <input type="date" name="data" id="ultimaData">
+                <label for="dataFinal">Data Final</label>
+                <input type="date" name="data" id="ultimaData">
+            </div>
+
+            <div class="secao-do-formulario nome-do-produto">
+                <label for="productName">Nome do produto (ou SKU)</label>
+                <input class="input-text" type="text" id="productName" placeholder="Digite o nome ou SKU do produto...">
+            </div>
+
+            <div class="botao-enviar">
+                <input class="btn-submit" type="submit" value="Pesquisar">
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+      <p class="user-name">Usuário: <span id="userName">Usuário </span></p>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/buscar.js"></script>
+</body>
+</html>

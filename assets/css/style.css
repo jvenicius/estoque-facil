@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #c8d1c7;
+  --button-color: #c4c8d6;
+  --button-color-hover: #d7dcea;
+  --font-family: "Roboto", sans-serif;
+}
+
+.input-text {
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+}
+
+.btn {
+  padding: 1rem;
+  margin: 1rem;
+  border: solid 1px black;
+  text-align: center;
+  background-color: var(--button-color);
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.btn:hover {
+  background-color: var(--button-color-hover);
+  transition: ease 200ms;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.logo h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 3.5rem;
+}
+
+.logo p {
+  margin-bottom: 8rem;
+  margin-top: 0;
+  font-size: 1.15rem;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: rgb(0, 17, 168);
+}
+
+.menu {
+  display: grid;
+  justify-content: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 1%;
+  left: 1%;
+}
+
+.user-name {
+  font-size: 1.1rem;
+}
