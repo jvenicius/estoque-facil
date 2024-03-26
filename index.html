@@ -35,10 +35,12 @@
       <p>Sistema de gestão e controle</p>
     </header>
     <div class="menu">
-      <a href="./pages/buscar.html" class="btn"><strong>BUSCAR</strong></a>
-      <a href="./pages/registro.html" class="btn"><strong>REGISTRO</strong></a>
-      <a href="#" class="btn"><strong>ALERTA ESTOQUE</strong></a>
-      
+      <form action="/pages/home.html?login=Usuário&senha=Senha">
+        <input class="boxl" type="text" id="login" name="login" value="Usuário"> <br>
+        <input class="btn" type="password" id="senha" name="senha" value="Senha"><br>
+        <input class="okl" type="submit" value="Confirmar">
+
+      </form>
     </div>
     <footer class="footer">
       <p class="user-name">Usuário: <span id="userName">Usuário </span></p>
