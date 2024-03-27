@@ -11,8 +11,8 @@
       content="José Antônio de Souza Neto, Rafael Ribeiro Talarico, José Venícius"
     />
     <link rel="stylesheet" href="../assets/css/style.css" />
-    <link rel="stylesheet" href="../assets/css/atualizar_produto.css">
-    <title>Atualizar produto</title>
+    <link rel="stylesheet" href="../assets/css/criar_alerta.css">
+    <title>Criar alerta</title>
 </head>
 <body>
     <header class="logo">
@@ -26,12 +26,17 @@
             <span class="search-icon">&#128269;</span>
         </div>
         <div class="container2">
-            <p><strong>Nome:</strong></p>
-            <p><strong>Fornecedor:</strong></p>
-            <p><strong>Quantidade:</strong></p>
-            <p><strong>Lote:</strong></p>
-            <div class="botao-alterar">
-                <input id="btnAlterarDados" class="btn-submit" type="submit" value="Alterar dados">
+            <p><strong>Estoque:</strong></p>
+            <label for="alerta"><strong>Alerta para:</strong></label>
+            <input class="inserir-alerta" type="number" id="alertaNumber">
+            <div class="opcoes-unidade">
+                <select id="unidadeOpcoes">
+                    <option value="kg">kg</option>
+                    <option value="un">un</option>
+                </select>
+            </div>
+            <div class="botao-alerta">
+                <input id="btnCriarAlerta" class="btn-submit" type="submit" value="Criar alerta">
             </div>
         </div>
     </main>
@@ -41,6 +46,6 @@
       <p class="user-name">Usuário: <span id="userName">Usuário </span></p>
     </footer>
 
-    <script src="../assets/js/atualizar_produto.js"></script>
+    <script src="../assets/js/criar_alerta.js"></script>
 </body>
 </html>
