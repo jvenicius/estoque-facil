@@ -1,0 +1,9 @@
+
+.user-field, .password-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-field > label, .password-field > label {
+    font-size: 1.2rem;
+}

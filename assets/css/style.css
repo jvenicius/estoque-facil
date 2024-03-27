@@ -29,21 +29,23 @@ body {
 
 .boxl {
   padding: 1rem;
-  margin: 1rem;
+  margin: 0.5rem 0 1rem 0;
   border: solid 1px black;
   text-align: center;
   background-color: var(--button-color-hover);
   font-size: 1.2rem;
 }
+
 .okl{
   padding: 0.6rem;
-  margin: 1rem;
+  margin: 1rem 0;
   border: solid 1px black;
   border-radius: 20px;
 }
+
 .btn {
   padding: 1rem;
-  margin: 1rem;
+  margin: 0.5rem 0 0 0;
   border: solid 1px black;
   text-align: center;
   background-color: var(--button-color);

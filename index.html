@@ -28,6 +28,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Estoque Fácil</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/login.css" />
+
   </head>
   <body>
     <header class="logo">
@@ -36,9 +38,15 @@
     </header>
     <div class="menu">
       <form action="/pages/home.html?login=Usuário&senha=Senha">
-        <input class="boxl" type="text" id="login" name="login" value="Usuário"> <br>
-        <input class="btn" type="password" id="senha" name="senha" value="Senha"><br>
-        <input class="okl" type="submit" value="Confirmar">
+        <div class="user-field">
+          <label for="login">Usuário</label>
+          <input class="boxl" type="text" id="login" name="login" placeholder="Usuário">
+        </div>
+        <div class="password-field">
+          <label for="senha">Senha</label>
+          <input class="btn" type="password" id="senha" name="senha" placeholder="Senha"><br>
+        </div>
+        <input class="okl" type="submit" value="Confirmar" id="submit">
 
       </form>
     </div>
