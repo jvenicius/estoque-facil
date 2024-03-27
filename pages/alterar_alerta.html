@@ -40,5 +40,23 @@
     </footer>
 
     <script src="../assets/js/alterar_alerta.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          const skuInput = document.getElementById('skuNumber');
+          const searchIcon = document.querySelector('.search-icon');
+          const alertButton = document.getElementById('btnAlterarAlerta');
+
+          searchIcon.addEventListener('click', function() {
+              const skuValue = skuInput.value.trim();
+              if (skuValue) {
+                  alertButton.addEventListener('click', function() {
+                      window.location.href = `config_alerta.html?sku=${skuValue}`;
+                  });
+              } else {
+                  alert('Por favor, insira o SKU do produto');
+              }
+          });
+      });
+  </script>
 </body>
 </html>

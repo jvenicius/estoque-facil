@@ -20,4 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
             alert('Produto não encontrado');
         }
     });
+    alertButton.addEventListener('click', function() {
+        window.location.href = 'criar_alerta.html';
+    });
 });
