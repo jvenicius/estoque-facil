@@ -47,7 +47,7 @@ form {
 
 .btn-submit {
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 50%;
   background-color: var(--button-color);
   border: none;
   font-size: 1.2rem;

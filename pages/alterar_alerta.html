@@ -11,8 +11,8 @@
       content="José Antônio de Souza Neto, Rafael Ribeiro Talarico, José Venícius"
     />
     <link rel="stylesheet" href="../assets/css/style.css" />
-    <link rel="stylesheet" href="../assets/css/buscar.css">
-    <title>Buscar produto</title>
+    <link rel="stylesheet" href="../assets/css/alterar_alerta.css">
+    <title>Alterar alerta</title>
 </head>
 <body>
     <header class="logo">
@@ -20,19 +20,25 @@
       <p>Sistema de gestão e controle</p>
     </header>
     <main class="container">
-        <div class="menu">
-            <a href="add_registro.html" class="btn"><strong>ADICIONAR PRODUTO</strong></a>
-            <a href="atualizar_produto.html" class="btn"><strong>ALTERAR PRODUTO</strong></a>
-            <a href="excluir_produto.html" class="btn"><strong>EXCLUIR PRODUTO</strong></a>
-            
-          </div>
+        <div class="secao-do-formulario nome-do-produto">
+            <label for="sku"><strong>SKU:</strong></label>
+            <input class="input-text" type="int" id="skuNumber" placeholder="Digite o SKU do produto...">
+            <span class="search-icon">&#128269;</span>
+        </div>
+        <div class="container2">
+            <p><strong>Estoque:</strong></p>
+            <p><strong>Alerta:</strong></p>
+            <div class="botao-alerta">
+                <input id="btnAlterarAlerta" class="btn-submit" type="submit" value="Alterar alerta">
+            </div>
+        </div>
     </main>
+    
 
     <footer class="footer">
       <p class="user-name">Usuário: <span id="userName">Usuário </span></p>
     </footer>
 
-    <script src="../assets/js/main.js"></script>
-    <script src="../assets/js/buscar.js"></script>
+    <script src="../assets/js/alterar_alerta.js"></script>
 </body>
 </html>

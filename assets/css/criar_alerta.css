@@ -1,0 +1,59 @@
+.container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.secao-do-formulario.nome-do-produto {
+    margin-right: 20rem; 
+    font-size: 24px;
+}
+
+p {
+    margin: 1rem;
+    font-size: 20px;
+}
+
+.search-icon {
+    cursor: pointer;
+}
+
+.botao-alerta {
+    padding: 2rem;
+    border-radius: 50%;
+    font-size: 20px;
+    
+}
+
+.container2 label[for="alerta"] {
+    font-size: 20px; 
+}
+
+.container2 .inserir-alerta {
+    width: 20%; 
+}
+
+.opcoes-unidade select {
+    
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+.btn-submit {
+    padding: 10px 30px; 
+    border-radius: 50px;
+    border: solid 0.5px black;
+    font-size: 1rem;
+    font-weight: bolder;
+    background-color: #c4c8d6;
+    color: gray;
+  }
