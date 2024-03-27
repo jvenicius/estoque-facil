@@ -1,51 +1,22 @@
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.4rem;
-    max-width: 800px;
-    margin: 0 auto;
-
-  }
-
-.fundo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.4rem;
-    background-color: rgba(131, 134, 142, 0.54);
-
-    border-radius: 5px;
-    box-sizing: border-box;
-    padding: 20px 5% 1px;
-    width: 100%;
-    max-width: 800px;
+.form {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  background-color: #eee;
+  width: fit-content;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 5px;
 }
-  
 
-  .secao-do-formulario {
-    margin: 0.25rem 5% 4em;
-  }
-  
-  .botao-adicionar {
-    padding: 2rem;
-    border-radius: 50%;
-    font-size: 30px;
-    text-align: center; 
-  }
-  
-  .btn-submit {
-    padding: 10px 30px; 
-    border-radius: 50px;
-    cursor: pointer;
-    border: solid 0.5px;
-    font-size: 1rem;
-    font-weight: bolder;
-    background-color: #c4c8d6;
-  }
+.secao-do-formulario {
+  display: flex;
+  flex-direction: column;
+}
 
-
-  label {
-    display: block;
-  }
-  
+.btn-field {
+  display: flex;
+  justify-content: flex-start;
+}

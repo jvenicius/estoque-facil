@@ -20,33 +20,27 @@
       <p>Sistema de gestão e controle</p>
     </header>
     <main class="container">
-        <div class="fundo">
-
-        
-
-            <div class="secao-do-formulario nome-do-produto">
-                <label for="sku">SKU:</label>
-                <input class="input-text" type="int" id="skuNumber" placeholder="Digite o SKU do produto...">
-            </div>
-
-            <div class="secao-do-formulario sku-do-produto">
-                <label for="nome">NOME:</label>
-                <input class="input-text" type="text" id="nameProduct" placeholder="Digite o nome do produto...">
-            </div>
-
-            <div class="secao-do-formulario fornecedor-do-produto">
-                <label for="fornecedor">FORNECEDOR:</label>
-                <input class="input-text" type="text" id="nameProvider" placeholder="Digite o fornecedor do produto...">
-            </div>
-
-        </div>   
-        
+            <form class="form">
+                <div class="secao-do-formulario nome-do-produto">
+                    <label for="skuNumber">SKU:</label>
+                    <input class="input-text" type="int" id="skuNumber" placeholder="Digite o SKU do produto...">
+                </div>
+                
+                <div class="secao-do-formulario sku-do-produto">
+                    <label for="nameProduct">NOME:</label>
+                    <input class="input-text" type="text" id="nameProduct" placeholder="Digite o nome do produto...">
+                </div>
+                
+                <div class="secao-do-formulario fornecedor-do-produto">
+                    <label for="nameProvider">FORNECEDOR:</label>
+                    <input class="input-text" type="text" id="nameProvider" placeholder="Digite o fornecedor do produto...">
+                </div>
+                <div class="btn-field">
+                    <input class="btn btn-submit" type="submit" value="Adicionar">
+                </div>
+            </form>
     </main>
-    <div style="clear:both;"></div>
 
-    <div class="botao-adicionar">
-        <input class="btn-submit" type="submit" value="Adicionar">
-    </div>
 
     <footer class="footer">
       <p class="user-name">Usuário: <span id="userName">Usuário </span></p>
