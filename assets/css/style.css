@@ -8,13 +8,19 @@
 
 :root {
   --background-color: #c8d1c7;
-  --button-color: #c4c8d6;
-  --button-color-hover: #d7dcea;
+  --button-color: #0070f3;
+  --button-color-hover: #115e9e;
+  --button-font-color: #fff;
   --font-family: "Roboto", sans-serif;
 }
 
 .input-text {
-  padding: 5px;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #fff;
+  font-size: 1.2rem;
+  border: 1px solid black;
 }
 
 a {
@@ -27,19 +33,9 @@ body {
   font-family: var(--font-family);
 }
 
-.boxl {
-  padding: 1rem;
-  margin: 0.5rem 0 1rem 0;
-  border: solid 1px black;
-  text-align: center;
-  background-color: var(--button-color-hover);
-  font-size: 1.2rem;
-}
-
-.okl{
+.okl {
   padding: 0.6rem;
   margin: 1rem 0;
-  border: solid 1px black;
   border-radius: 20px;
 }
 
@@ -47,15 +43,18 @@ body {
   padding: 1rem;
   margin: 0.5rem 0 0 0;
   border: solid 1px black;
-  text-align: center;
   background-color: var(--button-color);
   border-radius: 5px;
   font-size: 1.2rem;
+  color: var(--button-font-color);
+  border: none;
+  text-align: center;
 }
 
 .btn:hover {
   background-color: var(--button-color-hover);
   transition: ease 200ms;
+  cursor: pointer;
 }
 
 .logo {
@@ -102,6 +101,6 @@ body {
   font-size: 1.1rem;
 }
 
-.fkl{
-  align-items: center;
+.btn-submit {
+  padding: 0.5rem;
 }
