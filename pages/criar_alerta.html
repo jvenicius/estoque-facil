@@ -10,6 +10,10 @@
       name="author"
       content="José Antônio de Souza Neto, Rafael Ribeiro Talarico, José Venícius"
     />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/criar_alerta.css">
     <title>Criar alerta</title>
@@ -20,25 +24,33 @@
       <p>Sistema de gestão e controle</p>
     </header>
     <main class="container">
-        <div class="secao-do-formulario nome-do-produto">
-            <label for="sku"><strong>SKU:</strong></label>
-            <input class="input-text" type="int" id="skuNumber" placeholder="Digite o SKU do produto...">
-            <span class="search-icon">&#128269;</span>
-        </div>
-        <div class="container2">
-            <p><strong>Estoque:</strong></p>
-            <label for="alerta"><strong>Alerta para:</strong></label>
-            <input class="inserir-alerta" type="number" id="alertaNumber">
-            <div class="opcoes-unidade">
-                <select id="unidadeOpcoes">
-                    <option value="kg">kg</option>
-                    <option value="un">un</option>
-                </select>
+
+        <div class="container__form">
+            <div class="secao-do-formulario nome-do-produto">
+                <label for="sku"><strong>SKU:</strong></label>
+                <input class="input-text" type="int" id="skuNumber" placeholder="Digite o SKU do produto...">
+                <i class="ri-search-line"></i>
             </div>
-            <div class="botao-alerta">
-                <input id="btnCriarAlerta" class="btn-submit" type="submit" value="Criar alerta">
+
+            <div class="container2">
+                <p>Estoque</p>
+                <label for="alerta"><strong>Alerta para:</strong></label>
+                <div class="definir-kg-un">
+                    <input class="inserir-alerta" type="number" id="alertaNumber">
+                    <div class="opcoes-unidade">
+                        <select id="unidadeOpcoes">
+                            <option value="kg">kg</option>
+                            <option value="un">un</option>
+                        </select>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <div class="botao-alerta">
+            <input id="btnCriarAlerta" class="btn btn-submit" type="submit" value="Criar alerta">
+        </div>
+
     </main>
     
 

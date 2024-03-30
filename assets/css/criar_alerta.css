@@ -1,59 +1,85 @@
 .container {
-    display: flex;
-    justify-content: center;
-    
+  display: flex;
+  background-color: var(--background-container-color);
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 5px;
 }
 
-.secao-do-formulario.nome-do-produto {
-    margin-right: 20rem; 
-    font-size: 24px;
+.container__form {
+  display: flex;
+  justify-content: center;
+}
+
+.secao-do-formulario .nome-do-produto {
+  margin-right: 20rem;
+  font-size: 24px;
 }
 
 p {
-    margin: 1rem;
-    font-size: 20px;
+  margin: 0 0 1rem 0;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+i {
+  font-size: 3rem;
 }
 
 .search-icon {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .botao-alerta {
-    padding: 2rem;
-    border-radius: 50%;
-    font-size: 20px;
-    
+  padding: 2rem;
+  border-radius: 50%;
+  font-size: 20px;
 }
 
 .container2 label[for="alerta"] {
-    font-size: 20px; 
+  font-size: 20px;
 }
 
 .container2 .inserir-alerta {
-    width: 20%; 
+  width: 20%;
+}
+
+.definir-kg-un {
+  display: flex;
 }
 
 .opcoes-unidade select {
-    
-    padding: 2px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: white;
-    font-size: 16px;
+  padding: 2px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 16px;
 }
 
-
-
-
-
-
-
-.btn-submit {
-    padding: 10px 30px; 
-    border-radius: 50px;
-    border: solid 0.5px black;
-    font-size: 1rem;
-    font-weight: bolder;
-    background-color: #c4c8d6;
-    color: gray;
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 3%;
   }
+
+  .container__form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nome-do-produto {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nome-do-produto > input {
+    width: 90%;
+  }
+}

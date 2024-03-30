@@ -8,6 +8,10 @@
 
 :root {
   --background-color: #c8d1c7;
+  --background-container-color: #eee;
+  --main-color: #0070f3;
+  --secondary-color: green;
+  --error-color: red;
   --button-color: #0070f3;
   --button-color-hover: #115e9e;
   --button-font-color: #fff;
@@ -31,12 +35,6 @@ a {
 body {
   background-color: var(--background-color);
   font-family: var(--font-family);
-}
-
-.okl {
-  padding: 0.6rem;
-  margin: 1rem 0;
-  border-radius: 20px;
 }
 
 .btn {
@@ -104,4 +102,12 @@ body {
 .btn-submit {
   padding: 0.5rem;
   margin-left: 80px;
+}
+
+.menu {
+  background-color: #eee;
+  width: fit-content;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 15px;
 }
