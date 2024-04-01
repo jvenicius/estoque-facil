@@ -31,5 +31,5 @@ submit.addEventListener('click', (e) => {
 
     console.log(userData)
 
-    window.location.href = "/pages/home?.html";
+    window.location.href = "/pages/home.html";
 })

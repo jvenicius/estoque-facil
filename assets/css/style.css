@@ -55,6 +55,15 @@ body {
   cursor: pointer;
 }
 
+.btn-back {
+  background-color: gray;
+  margin-right: 1rem;
+}
+
+.btn-back:hover {
+  background-color: black;
+}
+
 .logo {
   display: flex;
   flex-direction: column;
@@ -70,7 +79,7 @@ body {
 }
 
 .logo p {
-  margin-bottom: 8rem;
+  margin-bottom: 2rem;
   margin-top: 0;
   font-size: 1.15rem;
 }
@@ -89,6 +98,12 @@ body {
   align-items: center;
 }
 
+.menu__voltar {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
 .footer {
   position: absolute;
   bottom: 1%;
@@ -99,9 +114,13 @@ body {
   font-size: 1.1rem;
 }
 
+.botoes {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .btn-submit {
   padding: 0.5rem;
-  margin-left: 80px;
 }
 
 .menu {
