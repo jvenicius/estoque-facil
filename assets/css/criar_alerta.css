@@ -7,16 +7,37 @@
   margin: auto;
   padding: 1rem;
   border-radius: 5px;
+  font-size: 1.2rem;
 }
 
 .container__form {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.secao-do-formulario .nome-do-produto {
-  margin-right: 20rem;
-  font-size: 24px;
+.container__form__section {
+  margin-bottom: 1rem;
+}
+
+.section__sku {
+  display: flex;
+}
+
+.sku-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-icon {
+  font-size: 2.5rem;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-left: 5px;
+}
+
+.search-icon:hover {
+  color: blue;
 }
 
 p {
@@ -26,60 +47,15 @@ p {
   font-weight: bold;
 }
 
-i {
-  font-size: 3rem;
-}
-
-.search-icon {
-  cursor: pointer;
-}
-
-.botao-alerta {
-  padding: 2rem;
-  border-radius: 50%;
-  font-size: 20px;
-}
-
-.container2 label[for="alerta"] {
-  font-size: 20px;
-}
-
-.container2 .inserir-alerta {
-  width: 20%;
-}
-
 .definir-kg-un {
   display: flex;
 }
 
 .opcoes-unidade select {
-  padding: 2px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background-color: white;
-  font-size: 16px;
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    width: 100%;
-    padding: 0 3%;
-  }
-
-  .container__form {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .nome-do-produto {
-    margin: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .nome-do-produto > input {
-    width: 90%;
-  }
+  border-radius: 5px;
+  padding: 0.5rem;
+  background-color: #fff;
+  font-size: 1.2rem;
+  border: 1px solid black;
+  margin-left: 5px;
 }
