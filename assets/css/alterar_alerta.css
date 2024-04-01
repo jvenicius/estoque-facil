@@ -1,59 +1,47 @@
 .container {
-    display: flex;
-    justify-content: center;
-    
+  display: flex;
+  background-color: var(--background-container-color);
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
 }
 
-.secao-do-formulario.nome-do-produto {
-    margin-right: 20rem; 
-    font-size: 24px;
+.container__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-p {
-    margin: 1rem;
-    font-size: 20px;
+.container__form__section {
+  margin-bottom: 1rem;
+}
+
+.section__sku {
+  display: flex;
+}
+
+.sku-field {
+  display: flex;
+  flex-direction: column;
 }
 
 .search-icon {
-    cursor: pointer;
+  font-size: 2.5rem;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-left: 5px;
 }
 
-.botao-alerta {
-    padding: 2rem;
-    border-radius: 50%;
-    font-size: 20px;
-    
+.search-icon:hover {
+  color: blue;
 }
 
-.container2 label[for="alerta"] {
-    font-size: 20px; 
+.section__show-alert-info {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 1rem;
 }
-
-.container2 .inserir-alerta {
-    width: 20%; 
-}
-
-.opcoes-unidade select {
-    
-    padding: 2px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: white;
-    font-size: 16px;
-}
-
-
-
-
-
-
-
-.btn-submit {
-    padding: 10px 30px; 
-    border-radius: 50px;
-    border: solid 0.5px black;
-    font-size: 1rem;
-    font-weight: bolder;
-    background-color: #c4c8d6;
-    color: gray;
-  }

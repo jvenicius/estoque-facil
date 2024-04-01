@@ -25,28 +25,32 @@
     </header>
     <main class="container">
 
-        <div class="container__form">
-            <div class="container__form__section section__sku">
-                <div class="sku-field">
-                    <label for="sku">SKU</label>
-                    <input class="input-text" type="text" id="sku" placeholder="Digite o SKU do produto...">
-                </div>
-                <i class="ri-search-line search-icon"></i>
-            </div>
+        <form action="">
 
-            <div class="container__form__section section__unit">
-                <label for="alertaNumber">Massa/Quantidade</label>
-                <div class="definir-kg-un">
-                    <input class="input-text" type="number" id="alertaNumber" placeholder="Insira o valor">
-                    <div class="opcoes-unidade">
-                        <select id="unidadeOpcoes">
-                            <option value="kg">kg</option>
-                            <option value="un">un</option>
-                        </select>
+            <div class="container__form">
+                <div class="container__form__section section__sku">
+                    <div class="sku-field">
+                        <label for="sku">SKU</label>
+                        <input class="input-text" type="text" id="sku" placeholder="Digite o SKU do produto...">
+                    </div>
+                    <i class="ri-search-line search-icon"></i>
+                </div>
+                
+                <div class="container__form__section section__unit">
+                    <label for="alertaNumber">Massa/Quantidade</label>
+                    <div class="definir-kg-un">
+                        <input class="input-text" type="number" id="alertaNumber" placeholder="Insira o valor">
+                        <div class="opcoes-unidade">
+                            <select id="unidadeOpcoes">
+                                <option value="kg">kg</option>
+                                <option value="un">un</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
+                
             </div>
-        </div>
+        </form>
 
         <div class="botoes">
             <a class="btn btn-back" href="./alerta.html">Voltar</a>

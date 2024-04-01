@@ -10,6 +10,10 @@
       name="author"
       content="José Antônio de Souza Neto, Rafael Ribeiro Talarico, José Venícius"
     />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/alterar_alerta.css">
     <title>Alterar alerta</title>
@@ -20,43 +24,35 @@
       <p>Sistema de gestão e controle</p>
     </header>
     <main class="container">
-        <div class="secao-do-formulario nome-do-produto">
-            <label for="sku"><strong>SKU:</strong></label>
-            <input class="input-text" type="int" id="skuNumber" placeholder="Digite o SKU do produto...">
-            <span class="search-icon">&#128269;</span>
-        </div>
-        <div class="container2">
-            <p><strong>Estoque:</strong></p>
-            <p><strong>Alerta:</strong></p>
-            <div class="botao-alerta">
-                <input id="btnAlterarAlerta" class="btn-submit" type="submit" value="Alterar alerta">
+        <form action="">
+
+            <div class="container__form">
+                <div class="container__form__section section__sku">
+                    <div class="sku-field">
+                        <label for="sku">SKU</label>
+                        <input class="input-text" type="text" id="sku" placeholder="Digite o SKU do produto...">
+                    </div>
+                    <i class="ri-search-line search-icon" id="search-icon"></i>
+                </div>
+                
+                <div class="container__form__section section__show-alert-info">
+                    <p>Estoque: <span id="estoque"> - </span></p>
+                    <p>Alerta: <span id="alerta"> - </span></p>
+                </div>
+                
             </div>
-        </div>
+
+            <div class="botoes">
+                <a class="btn btn-back" href="./alerta.html">Voltar</a>
+                <input id="btnAlterarAlerta" class="btn btn-submit" type="submit" value="Alterar alerta">
+            </div>
+
     </main>
     
-
     <footer class="footer">
       <p class="user-name">Usuário: <span id="userName">Usuário </span></p>
     </footer>
 
     <script src="../assets/js/alterar_alerta.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-          const skuInput = document.getElementById('skuNumber');
-          const searchIcon = document.querySelector('.search-icon');
-          const alertButton = document.getElementById('btnAlterarAlerta');
-
-          searchIcon.addEventListener('click', function() {
-              const skuValue = skuInput.value.trim();
-              if (skuValue) {
-                  alertButton.addEventListener('click', function() {
-                      window.location.href = `config_alerta.html?sku=${skuValue}`;
-                  });
-              } else {
-                  alert('Por favor, insira o SKU do produto');
-              }
-          });
-      });
-  </script>
 </body>
 </html>
