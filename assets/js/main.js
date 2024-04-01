@@ -1,35 +1,34 @@
-const userName = document.querySelector('#userName');
+const userName = document.querySelector("#userName");
 
 const defineUserName = () => {
-    userName.innerHTML = "Undefined";
-}
+  userName.innerHTML = "Undefined";
+};
 
 window.onload = defineUserName;
 
-let user = document.querySelector('#login');
-let passw = document.querySelector('#senha');
-let submit = document.querySelector('#submit');
+let user = document.querySelector("#login");
+let passw = document.querySelector("#senha");
+let submit = document.querySelector("#submit");
 
-user.addEventListener('change', (e) => {
-    user = e.target.value;
-    console.log(user);
-})
+user.addEventListener("change", (e) => {
+  user = e.target.value;
+  console.log(user);
+});
 
-passw.addEventListener('change', (e) => {
-    passw = e.target.value;
-    console.log(passw)
-})
+passw.addEventListener("change", (e) => {
+  passw = e.target.value;
+  console.log(passw);
+});
 
-submit.addEventListener('click', (e) => {
-    
-    e.preventDefault()
-    
-    const userData = {
-        user: user,
-        password: passw
-    }
+submit.addEventListener("click", (e) => {
+  e.preventDefault();
 
-    console.log(userData)
+  const userData = {
+    user: user,
+    password: passw,
+  };
 
-    window.location.href = "/pages/home.html";
-})
+  console.log(userData);
+
+  window.location.href = "/pages/home.html";
+});
