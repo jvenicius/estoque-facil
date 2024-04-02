@@ -44,16 +44,23 @@
       document.addEventListener("DOMContentLoaded", function() {
           const skuInput = document.getElementById('skuNumber');
           const searchIcon = document.querySelector('.search-icon');
-          const alertButton = document.getElementById('btnAlterarAlerta');
+          const estoqueElement = document.getElementById('estoque');
+          const alertButton = document.getElementById('btnCriarAlerta');
 
           searchIcon.addEventListener('click', function() {
               const skuValue = skuInput.value.trim();
               if (skuValue) {
+                  estoqueElement.textContent = '100 un';
+                  alertButton.style.color = 'black';
+                  alertButton.style.cursor = 'pointer';
                   alertButton.addEventListener('click', function() {
-                      window.location.href = `config_alerta.html?sku=${skuValue}`;
+                      window.location.href = `criar_alerta.html?sku=${skuValue}`;
                   });
               } else {
-                  alert('Por favor, insira o SKU do produto');
+                  estoqueElement.textContent = '';
+                  alertButton.style.color = 'gray';
+                  alertButton.style.cursor = 'default';
+                  alert('Produto não encontrado');
               }
           });
       });
