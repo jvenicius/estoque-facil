@@ -26,7 +26,7 @@ Neste repositório encontra-se o código font do projeto junto a parte Front End
 
 ### Menu de registro
 
-![menu produto](img/menuproduto)
+![menu produto](img/menuproduto.PNG)
 
 ### Filtro de exclusão
 
