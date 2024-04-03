@@ -14,39 +14,39 @@ Neste repositório encontra-se o código font do projeto junto a parte Front End
 
 ### Tela de login
 
-![index](img\index.PNG)
+![index](img/index.PNG)
 
 ### Menu principal
 
-![menu1](menu1.PNG)
+![menu1](img/menu1.PNG)
 
 ### Filtro de busca
 
-![buscar produto](img\buscar produto.PNG)
+![buscar produto](img/buscarproduto.PNG)
 
 ### Menu de registro
 
-![menu produto](img\menu produto.PNG)
+![menu produto](img/menu/produto.PNG)
 
 ### Filtro de exclusão
 
-![op3](img\op3.PNG)
+![op3](img/op3.PNG)
 
 ### Filtro de mudança
 
-![op2](img\op2.PNG)
+![op2](img/op2.PNG)
 
 ### Filtro para adicionar
 
-![op1](img\op1.PNG)
+![op1](img/op1.PNG)
 
 ### Menu de alerta de estoque
 
-![menu2](img\menu2.PNG)
+![menu2](img/menu2.PNG)
 
-![op5](img\op5.PNG)
+![op5](img/op5.PNG)
 
-![op4](img\op4.PNG)
+![op4](img/op4.PNG)
 
 
 
