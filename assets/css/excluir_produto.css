@@ -1,10 +1,15 @@
 .container {
     display: flex;
     justify-content: center;
-    
+    width: fit-content;
+    background-color: var(--background-container-color);
+    padding: 1rem;
+    border: 5px;
+    margin: auto;
 }
 
 .secao-do-formulario.nome-do-produto {
+    padding-left: 15px;
     margin-right: 20rem; 
     font-size: 24px;
 }
@@ -24,13 +29,3 @@ p {
     font-size: 30px;
     
 }
-
-.btn-submit {
-    padding: 10px 30px; 
-    border-radius: 50px;
-    border: solid 0.5px black;
-    font-size: 1rem;
-    font-weight: bolder;
-    background-color: #c4c8d6;
-    color: gray;
-  }

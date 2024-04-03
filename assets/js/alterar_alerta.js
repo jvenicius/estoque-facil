@@ -1,23 +1,19 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const skuInput = document.getElementById('skuNumber');
-    const searchIcon = document.querySelector('.search-icon');
-    const estoqueElement = document.querySelector('.container2 p:nth-child(1) strong');
-    const alertElement = document.querySelector('.container2 p:nth-child(2) strong');
-    const alertButton = document.getElementById('btnAlterarAlerta');
-    
-    searchIcon.addEventListener('click', function() {
-        const skuValue = skuInput.value.trim();
-        if (skuValue) { 
-            estoqueElement.textContent = 'Estoque: 100 un';
-            alertElement.textContent = 'Alerta: 50 un';
-            alertButton.style.color = 'black';
-            alertButton.style.cursor = 'pointer';
-        } else {
-            estoqueElement.textContent = 'Estoque:';
-            alertElement.textContent = 'Alerta:';
-            alertButton.style.color = 'gray';
-            alertButton.style.cursor = 'default';
-            alert('Produto não encontrado');
-        }
-    });
+// Define variáveis do DOM
+const searchIcon = document.querySelector("#search-icon");
+const estoque = document.querySelector("#estoque");
+const alerta = document.querySelector("#alerta");
+const btnAlterarAlerta = document.querySelector("#btnAlterarAlerta");
+
+// Funções (comportamentos)
+function changeValues() {
+  estoque.textContent = "30 un";
+  alerta.textContent = "15 un";
+}
+
+// Eventos (Ex.: Ao clicar, dispara uma função)
+searchIcon.addEventListener("click", changeValues);
+btnAlterarAlerta.addEventListener("click", () => {
+  prompt("Novo valor: ");
+  prompt("Nova unidade de medida (kg/un): ");
+  alert("Alerta alterado com sucesso!");
 });
