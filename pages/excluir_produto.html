@@ -20,21 +20,29 @@
       <p>Sistema de gestão e controle</p>
     </header>
     <main class="container">
-        <div class="secao-do-formulario nome-do-produto">
+      <form action="">
+        <div>
+
+          <div class="secao-do-formulario nome-do-produto">
             <label for="sku"><strong>SKU:</strong></label>
             <input class="input-text" type="int" id="skuNumber" placeholder="Digite o SKU do produto...">
             <span class="search-icon">&#128269;</span>
-        </div>
-        <div class="container2">
+          </div>
+          
+          <div class="container2">
             <p><strong>Nome:</strong></p>
             <p><strong>Fornecedor:</strong></p>
             <p><strong>Quantidade:</strong></p>
             <p><strong>Lote:</strong></p>
-            <div class="botao-excluir">
-                <input id="btnExcluirDados" class="btn-submit" type="submit" value="Excluir produto">
-            </div>
+          </div>
+          
         </div>
-    </main>
+        <div class="botoes">
+          <a class="btn btn-back" href="./registro.html">Voltar</a>
+          <input id="btnExcluirDados" class="btn btn-submit" type="submit" value="Excluir produto">
+        </div>
+      </form>
+      </main>
     
 
     <footer class="footer">

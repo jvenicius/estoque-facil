@@ -1,0 +1,59 @@
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+aside {
+    color: red;
+}
+
+.cadastro {
+    display: flex;
+    justify-content: center;   
+    align-items: center; 
+}
+
+.user-field,
+.cpf-field,
+.email-field,
+.telefone-field,
+.password-field,
+.condition {
+    margin-bottom: 10px; 
+}
+
+.user-field,
+.cpf-field,
+.email-field,
+.telefone-field,
+.password-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-field label,
+.cpf-field label,
+.email-field label,
+.telefone-field label,
+.password-field label,
+.condition p {
+    margin-bottom: 5px; 
+}
+
+.user-field input,
+.cpf-field input,
+.email-field input,
+.telefone-field input,
+.password-field input {
+    max-width: 300px;
+    padding: 8px;
+    outline: none;
+    border: 1px solid;
+}
+
+.condition {
+    font-size: 0.75rem;
+}
