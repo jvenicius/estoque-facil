@@ -1,59 +1,39 @@
-.logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 3%;
+.container {
+    margin-bottom: 1rem;
 }
 
-aside {
+.container__form {
+    width: fit-content;
+    background-color: var(--background-container-color);
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.container__form__info {
+    margin-bottom: 0.4rem;
+}
+
+.container__form__info > .required-info {
     color: red;
+    font-size: 0.7rem;
 }
 
-.cadastro {
-    display: flex;
-    justify-content: center;   
-    align-items: center; 
-}
-
-.user-field,
-.cpf-field,
-.email-field,
-.telefone-field,
-.password-field,
-.condition {
+.form__field {
     margin-bottom: 10px; 
-}
-
-.user-field,
-.cpf-field,
-.email-field,
-.telefone-field,
-.password-field {
     display: flex;
     flex-direction: column;
 }
 
-.user-field label,
-.cpf-field label,
-.email-field label,
-.telefone-field label,
-.password-field label,
-.condition p {
-    margin-bottom: 5px; 
+.required-field::after {
+    content: "*";
+    font-size: 0.7rem;
+    color: red;
+    position: absolute;
+    margin-left: 1px;
 }
 
-.user-field input,
-.cpf-field input,
-.email-field input,
-.telefone-field input,
-.password-field input {
-    max-width: 300px;
-    padding: 8px;
-    outline: none;
-    border: 1px solid;
-}
-
-.condition {
+.conditions {
     font-size: 0.75rem;
+    margin-left: 1rem;
 }
