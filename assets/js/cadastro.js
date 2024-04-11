@@ -18,29 +18,29 @@ function createErrorMessage(field, message) {
 function nomeEhValido() {
   if (nome.value.length == 0) {
     createErrorMessage(userField, "*O nome deve conter no mínimo 3 letras.")
-    alert("nome vazio!");
+    //alert("nome vazio!");
     return false;
   }
 
   nomeTemp = nome.value.trim();
 
-  //   Eu vou voltar, não tá funcionando acento
+  
   const onlyLetters = /^[a-zA-Z]+(?:\s[a-zA-Z]+)*$/.test(nomeTemp);
-  //   ^[\p{L}\s]+(?:\s[\p{L}\s]*)*$
+  
 
   if (nomeTemp.length <= 2 || !onlyLetters) {
-    alert("Seu nome é inválido!");
+    alert("Insira um nome válido");
     nome.value = "";
     return false;
   } else {
-    alert("Seu nome está correto!");
+    //alert("Seu nome está correto!");
     return true;
   }
 }
 
 function cpfEhValido() {
   if (cpf.value.length == 0) {
-    alert("cpf vazio!");
+    alert("O campo CPF não pode ficar vazio!");
     return false;
   }
 
@@ -49,18 +49,18 @@ function cpfEhValido() {
   const verificaOnzeDigitos = /^\d{11}$/.test(cpfTemp);
 
   if (!verificaOnzeDigitos) {
-    alert("Seu cpf é inválido!");
+    alert("Insira um CPF válido");
     cpf.value = "";
     return false;
   } else {
-    alert("Seu cpf está correto!");
+    //alert("Seu cpf está correto!");
     return true;
   }
 }
 
 function emailEhValido() {
   if (email.value.length == 0) {
-    alert("email vazio!");
+    alert("O campo Email não pode ficar vazio");
     return false;
   }
 
@@ -70,38 +70,35 @@ function emailEhValido() {
   const emailEhValido = emailRegex.test(emailTemp);
 
   if (!emailEhValido) {
-    alert("Seu email é inválido!");
+    alert("Insira um email válido");
     email.value = "";
     return false;
   } else {
-    alert("Seu email está correto!");
+    //alert("Seu email está correto!");
     return true;
   }
 }
 
 function telefoneEhValido() {
-  if (telefone.value.length == 0) {
-    alert("telefone vazio!");
-    return false;
-  }
+  
   const telefoneTemp = telefone.value.trim();
 
   const telefoneRegex = /^\(?\d{2}\)?\d{5}-?\d{4}$/;
   const telefoneEhValido = telefoneRegex.test(telefoneTemp);
 
   if (!telefoneEhValido) {
-    alert("Seu telefone é inválido!");
+    alert("Insira um número de telefone válido");
     telefone.value = "";
     return false;
   } else {
-    alert("Seu telefone está correto!");
+    //alert("Seu telefone está correto!");
     return true;
   }
 }
 
 function senhaEhValida() {
   if (senha.value.length == 0) {
-    alert("senha vazio!");
+    alert("O campo senha não pode ficar vazio");
     return false;
   }
 
@@ -116,7 +113,7 @@ function senhaEhValida() {
     );
     return false;
   } else {
-    alert("Sua senha é válida!");
+    //alert("Sua senha é válida!");
     return true;
   }
 }
@@ -134,7 +131,7 @@ function verificaSeAsSenhasSaoIguais() {
     alert("As senhas são diferentes!");
     return false;
   } else {
-    alert("As senhas são iguais!");
+    //alert("As senhas são iguais!");
     return true;
   }
 }
