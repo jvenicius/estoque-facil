@@ -1,99 +1,156 @@
 const nome = document.querySelector("#nome");
 const cpf = document.querySelector("#cpf");
 const email = document.querySelector("#email");
+const telefone = document.querySelector("#fone");
+const senha = document.querySelector("#senha");
+const senhaRepetida = document.querySelector("#senha-repetida");
+const submit = document.querySelector("#submit");
 
-nome.addEventListener("change", (e) => {
-  nomeTemp = e.target.value.trim();
+function nomeEhValido() {
+  if (nome.value.length == 0) {
+    alert("nome vazio!");
+    return false;
+  }
+
+  nomeTemp = nome.value.trim();
 
   //   Eu vou voltar, não tá funcionando acento
   const onlyLetters = /^[a-zA-Z]+(?:\s[a-zA-Z]+)*$/.test(nomeTemp);
   //   ^[\p{L}\s]+(?:\s[\p{L}\s]*)*$
 
   if (nomeTemp.length <= 2 || !onlyLetters) {
-    console.log("Seu nome é inválido!");
+    alert("Seu nome é inválido!");
+    nome.value = "";
+    return false;
   } else {
-    console.log("Seu nome está correto!");
+    alert("Seu nome está correto!");
+    return true;
   }
-});
+}
 
-cpf.addEventListener("change", (e) => {
-  cpfTemp = e.target.value.trim();
+function cpfEhValido() {
+  if (cpf.value.length == 0) {
+    alert("cpf vazio!");
+    return false;
+  }
+
+  const cpfTemp = cpf.value.trim();
 
   const verificaOnzeDigitos = /^\d{11}$/.test(cpfTemp);
 
   if (!verificaOnzeDigitos) {
-    console.log("Seu cpf é inválido!");
+    alert("Seu cpf é inválido!");
+    cpf.value = "";
+    return false;
   } else {
-    console.log("Seu cpf está correto!");
+    alert("Seu cpf está correto!");
+    return true;
   }
-});
+}
 
-email.addEventListener("change", (e) => {
-  emailTemp = e.target.value.trim();
+function emailEhValido() {
+  if (email.value.length == 0) {
+    alert("email vazio!");
+    return false;
+  }
 
-  const verificaOnzeDigitos = /^\d{11}$/.test(cpfTemp);
+  const emailTemp = email.value.trim();
 
-  if (!verificaOnzeDigitos) {
-    console.log("Seu cpf é inválido!");
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const emailEhValido = emailRegex.test(emailTemp);
+
+  if (!emailEhValido) {
+    alert("Seu email é inválido!");
+    email.value = "";
+    return false;
   } else {
-    console.log("Seu cpf está correto!");
+    alert("Seu email está correto!");
+    return true;
   }
-});
+}
 
-
-document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("submit").addEventListener("click", function (event) {
-    var email = document.getElementById("email").value.trim();
-
-    if (!isValidEmail(email)) {
-      alert("Por favor, insira um email válido.");
-      event.preventDefault();
-    }
-  });
-
-  function isValidEmail(email) {
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
+function telefoneEhValido() {
+  if (telefone.value.length == 0) {
+    alert("telefone vazio!");
+    return false;
   }
-});
+  const telefoneTemp = telefone.value.trim();
 
-document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("submit").addEventListener("click", function (event) {
-    var telefone = document.getElementById("fone").value.trim();
+  const telefoneRegex = /^\(?\d{2}\)?\d{5}-?\d{4}$/;
+  const telefoneEhValido = telefoneRegex.test(telefoneTemp);
 
-    if (!isValidTelefone(telefone)) {
-      alert("Por favor, insira um telefone válido no formato (00)00000-0000.");
-      event.preventDefault();
-    }
-  });
-
-  function isValidTelefone(telefone) {
-    var telefoneRegex = /^\(\d{2}\)\d{5}-\d{4}$/;
-    return telefoneRegex.test(telefone);
+  if (!telefoneEhValido) {
+    alert("Seu telefone é inválido!");
+    telefone.value = "";
+    return false;
+  } else {
+    alert("Seu telefone está correto!");
+    return true;
   }
-});
+}
 
-document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("submit").addEventListener("click", function (event) {
-    var senha = document.getElementById("senha").value.trim();
-    var senhaRepetida = document.getElementById("senha-repetida").value.trim();
+function senhaEhValida() {
+  if (senha.value.length == 0) {
+    alert("senha vazio!");
+    return false;
+  }
 
-    if (senha === "" || senhaRepetida === "") {
-      alert("Por favor, preencha ambos os campos de senha.");
-      event.preventDefault();
-    } else if (senha !== senhaRepetida) {
-      alert("Por favor, repita sua senha corretamente.");
-      event.preventDefault();
-    }
-  });
+  const senhaTemp = senha.value.trim();
 
-  document
-    .getElementById("senha-repetida")
-    .addEventListener("input", function (event) {
-      var senhaRepetida = this.value.trim();
-      if (!/^[0-9a-zA-Z]+$/.test(senhaRepetida)) {
-        alert("Caracteres especiais não são válidos.");
-        this.value = "";
-      }
-    });
+  const senhaRegex = /^(?=.*[a-zA-Z])(?=.*\d)[^\s]{8,}$/;
+  const senhaEhValida = senhaRegex.test(senhaTemp);
+
+  if (!senhaEhValida) {
+    alert(
+      "Sua senha deve possuir ao menos 8 caracteres, incluindo letras e números! Não deve possuir espaços"
+    );
+    return false;
+  } else {
+    alert("Sua senha é válida!");
+    return true;
+  }
+}
+
+function verificaSeAsSenhasSaoIguais() {
+  if (senhaRepetida.value.length == 0) {
+    alert("senha repetida vazia!");
+    return false;
+  }
+
+  const senhaTemp = senha.value.trim();
+  const senhaRepetidaTemp = senhaRepetida.value.trim();
+
+  if (senhaTemp !== senhaRepetidaTemp) {
+    alert("As senhas são diferentes!");
+    return false;
+  } else {
+    alert("As senhas são iguais!");
+    return true;
+  }
+}
+
+submit.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  const retornoNome = nomeEhValido();
+  const retornoCPF = cpfEhValido();
+  const retornoEmail = emailEhValido();
+  const retornoTelefone = telefoneEhValido();
+  const retornoSenha = senhaEhValida();
+  const retornoSenhasIguais = verificaSeAsSenhasSaoIguais();
+
+  if (
+    !retornoNome ||
+    !retornoCPF ||
+    !retornoEmail ||
+    !retornoTelefone ||
+    !retornoSenha ||
+    !retornoSenhasIguais
+  ) {
+    alert("Verifique os erros do formulário!");
+    senha.value = "";
+    senhaRepetida.value = "";
+  } else {
+    alert("Cadastro realizado com sucesso!");
+  }
 });
