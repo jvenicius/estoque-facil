@@ -6,8 +6,18 @@ const senha = document.querySelector("#senha");
 const senhaRepetida = document.querySelector("#senha-repetida");
 const submit = document.querySelector("#submit");
 
+const userField = document.querySelector(".user-field");
+
+function createErrorMessage(field, message) {
+  const errorMessage = document.createElement("p");
+  errorMessage.textContent = message;
+  errorMessage.classList.add("error-message");
+  field.appendChild(errorMessage);
+}
+
 function nomeEhValido() {
   if (nome.value.length == 0) {
+    createErrorMessage(userField, "*O nome deve conter no mínimo 3 letras.")
     alert("nome vazio!");
     return false;
   }
