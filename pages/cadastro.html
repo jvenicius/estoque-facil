@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="SystemWeb - Estoque Fácil" />
+    <meta name="keywords" content="Estoque Fácil, Estoque, Mercado" />
+    <meta
+      name="author"
+      content="José Antônio de Souza Neto, Rafael Ribeiro Talarico, José Venícius"
+    />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/cadastro.css" />
+  </head>
+  <body>
+    <header class="logo">
+      <h1><span class="green">Estoque</span><span class="blue">Fácil</span></h1>
+      <p>Sistema de gestão e controle</p>
+    </header>
+    <main class="container">
+      <form class="container__form" action="">
+        <div class="container__form__info">
+          <p class="required-info">*campos obrigatórios</p>
+        </div>
+        <div class="user-field form__field">
+          <label class="required-field" for="nome">Nome Completo</label>
+          <input
+            class="input-text"
+            type="text"
+            id="nome"
+            name="cadastro"
+            autocomplete="off"
+          />
+        </div>
+        <div class="cpf-field form__field">
+          <label class="required-field" for="cpf">CPF</label>
+          <input
+            class="input-text"
+            type="text"
+            id="cpf"
+            name="cpf"
+            autocomplete="off"
+          />
+        </div>
+        <div class="email-field form__field">
+          <label class="required-field" for="email">E-mail</label>
+          <input
+            class="input-text"
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="off"
+          />
+        </div>
+        <div class="telefone-field form__field">
+          <label for="fone">Telefone</label>
+          <input
+            class="input-text"
+            type="fone"
+            id="fone"
+            name="fone"
+            autocomplete="off"
+          />
+        </div>
+        <div class="password-field form__field">
+          <label class="required-field" for="senha">Crie sua senha</label>
+          <input class="input-text" type="password" id="senha" name="senha" />
+        </div>
+        <div class="conditions-field form__field">
+          <ul class="conditions">
+            <li>Deve conter pelo menos 8 dígitos.</li>
+            <li>Deve conter letras e números.</li>
+            <li>Não deve adicionar espaços.</li>
+          </ul>
+        </div>
+        <div class="password-field form__field">
+          <label class="required-field" for="senha-repetida"
+            >Repita sua senha</label
+          >
+          <input
+            class="input-text"
+            type="password"
+            id="senha-repetida"
+            name="senha-repetida"
+          />
+        </div>
+        <div class="botoes">
+          <a class="btn btn-back" href="../index.html">Voltar</a>
+          <input
+            class="btn btn-submit"
+            type="submit"
+            value="Confirmar"
+            id="submit"
+          />
+        </div>
+      </form>
+    </main>
+    <script src="../assets/js/cadastro.js"></script>
+  </body>
+</html>

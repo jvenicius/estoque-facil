@@ -7,3 +7,12 @@
 .user-field > label, .password-field > label {
     font-size: 1.2rem;
 }
+
+.signup-link {
+    margin: 1rem;
+}
+
+.signup-link span {
+    font-weight: bolder;
+    text-decoration: underline;
+}
